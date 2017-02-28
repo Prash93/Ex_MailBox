@@ -11,15 +11,15 @@
     <div>
     
         <asp:Label ID="LabelEmailAdd" runat="server" Text="Email Address: "></asp:Label>
-        <asp:TextBox ID="TextBoxEmailAdd" runat="server" style="margin-left: 30px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxEmailAdd" runat="server" style="margin-left: 30px" Width="287px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="LabelName" runat="server" Text="Name: "></asp:Label>
-        <asp:TextBox ID="TextBoxName" runat="server" style="margin-left: 80px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxName" runat="server" style="margin-left: 80px" Width="283px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="LabelAddress" runat="server" Text="Address: "></asp:Label>
-        <asp:TextBox ID="TextBoxAddress" runat="server" style="margin-left: 67px"></asp:TextBox>
+        <asp:TextBox ID="TextBoxAddress" runat="server" style="margin-left: 67px" Width="279px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="LabelPassword" runat="server" Text="Password: "></asp:Label>

@@ -21,9 +21,9 @@
         <asp:RadioButton ID="RadioButtonRed" runat="server" Text="Red" />
         <asp:RadioButton ID="RadioButtonBlue" runat="server" Text="Blue" />
         <asp:RadioButton ID="RadioButtonGreen" runat="server" Text="Green" />
+        <asp:RadioButton ID="RadioButtonYellow" runat="server" Text="Yellow" />
         <br />
         <br />
-        <asp:RadioButton ID="RadioButtonYellow" runat="server" OnCheckedChanged="RadioButton4_CheckedChanged" Text="Yellow" />
         <br />
         <br />
         <br />
