@@ -18,5 +18,10 @@ namespace Ex_MailBox
         {
             Response.Redirect("CreateAccount.aspx");
         }
+
+        protected void ButtonLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }

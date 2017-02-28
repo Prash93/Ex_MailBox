@@ -12,7 +12,7 @@
     
         <br />
         <br />
-        <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="127px" />
+        <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="127px" OnClick="ButtonLogin_Click" />
         <asp:Button ID="ButtonCreateAccount" runat="server" style="margin-left: 346px" Text="Create Account" Width="117px" OnClick="ButtonCreateAccount_Click" />
         <br />
         <br />
