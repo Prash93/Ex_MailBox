@@ -11,17 +11,33 @@
     <div style="height: 175px">
     
         <br />
-        <br />
         <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="127px" OnClick="ButtonLogin_Click" />
         <asp:Button ID="ButtonCreateAccount" runat="server" style="margin-left: 346px" Text="Create Account" Width="117px" OnClick="ButtonCreateAccount_Click" />
         <br />
         <br />
         <asp:Label ID="LabelColour" runat="server" Text="Colours"></asp:Label>
         <br />
-        <asp:RadioButton ID="RadioButtonRed" runat="server" Text="Red" OnCheckedChanged="RadioButtonRed_CheckedChanged" />
-        <asp:RadioButton ID="RadioButtonBlue" runat="server" Text="Blue" OnCheckedChanged="RadioButtonBlue_CheckedChanged" />
-        <asp:RadioButton ID="RadioButtonGreen" runat="server" Text="Green" OnCheckedChanged="RadioButtonGreen_CheckedChanged" />
-        <asp:RadioButton ID="RadioButtonYellow" runat="server" Text="Yellow" OnCheckedChanged="RadioButtonYellow_CheckedChanged" />
+        <asp:RadioButton ID="RadioButtonRed" runat="server" Text="Red" />
+        <asp:RadioButton ID="RadioButtonBlue" runat="server" Text="Blue"  />
+        <asp:RadioButton ID="RadioButtonGreen" runat="server" Text="Green"  />
+        <asp:RadioButton ID="RadioButtonYellow" runat="server" Text="Yellow"  />
+        <br />
+        <br />
+        <asp:Button ID="ButtonRed" runat="server" OnClick="ButtonRed_Click" Text="Red" Width="63px" />
+        <asp:Button ID="ButtonBlue" runat="server" OnClick="ButtonBlue_Click" style="margin-left: 32px" Text="Blue" Width="62px" />
+        <asp:Button ID="ButtonGreen" runat="server" OnClick="ButtonGreen_Click" style="margin-left: 40px" Text="Green" />
+        <asp:Button ID="ButtonYellow" runat="server" OnClick="ButtonYellow_Click" style="height: 26px; margin-left: 54px" Text="Yellow" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />

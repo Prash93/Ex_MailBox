@@ -25,6 +25,7 @@ namespace Ex_MailBox
             Response.Redirect("Login.aspx");
         }
 
+        /*
         protected void RadioButtonRed_CheckedChanged(object sender, EventArgs e)
         {
             RadioButtonBlue.Checked = false;
@@ -54,6 +55,26 @@ namespace Ex_MailBox
             RadioButtonBlue.Checked = false;
             RadioButtonGreen.Checked = false;
             RadioButtonRed.Checked = false;
+            Session["colour"] = "yellow";
+        }
+        */
+        protected void ButtonRed_Click(object sender, EventArgs e)
+        {
+            Session["colour"] = "red";
+        }
+
+        protected void ButtonBlue_Click(object sender, EventArgs e)
+        {
+            Session["colour"] = "blue";
+        }
+
+        protected void ButtonGreen_Click(object sender, EventArgs e)
+        {
+            Session["colour"] = "green";
+        }
+
+        protected void ButtonYellow_Click(object sender, EventArgs e)
+        {
             Session["colour"] = "yellow";
         }
     }

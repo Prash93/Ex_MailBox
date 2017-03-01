@@ -16,7 +16,7 @@ namespace Ex_MailBox
 
         string email, password;
 
-        HttpCookie colourCookie;
+        HttpCookie colourCookie = new HttpCookie("userInfo");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,7 +32,6 @@ namespace Ex_MailBox
                 Response.Write(exConnection.ToString());
             }
 
-            colourCookie = new HttpCookie("userInfo");
             colourCookie.Values["selectedColour"] = Session["colour"].ToString();
 
             try
