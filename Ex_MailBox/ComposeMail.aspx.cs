@@ -15,7 +15,7 @@ namespace Ex_MailBox
         SqlDataReader reader;
 
         string toEmail, ccEmail, subject, body;
-
+        //
         protected void Page_Load(object sender, EventArgs e)
         {
             con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename='C:\\Users\\Administrator\\Documents\\GitHub\\Ex_MailBox\\Ex_MailBox\\App_Data\\Database1.mdf';Integrated Security=True");
