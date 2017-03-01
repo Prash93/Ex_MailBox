@@ -16,7 +16,7 @@ namespace Ex_MailBox
 
         protected void ButtonCompose_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ComposeEmail.aspx");
+            Response.Redirect("ComposeMail.aspx");
         }
     }
 }
