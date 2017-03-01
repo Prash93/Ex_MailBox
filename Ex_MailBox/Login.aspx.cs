@@ -16,6 +16,8 @@ namespace Ex_MailBox
 
         string email, password;
 
+        HttpCookie colourCookie;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //****          CHANGE CONNECTION PATHS         ****//
@@ -30,6 +32,22 @@ namespace Ex_MailBox
                 Response.Write(exConnection.ToString());
             }
 
+            colourCookie = new HttpCookie("userInfo");
+            colourCookie.Values["selectedColour"] = Session["colour"].ToString();
+
+            try
+            {
+                if (Request.Cookies["userInfo"].Values != null)
+                {
+                    Response.Write("Colour is: " + Request.Cookies["userInfo"]["selectedColour"].ToString());
+                    Response.Write("<br/>");
+                }
+            }
+            catch (Exception exCookieColour)
+            {
+                Response.Write(exCookieColour.ToString());
+            }
+            
         }
 
         protected void ButtonLogIn_Click(object sender, EventArgs e)
@@ -51,6 +69,10 @@ namespace Ex_MailBox
                 Session["Address"] = reader["Address"].ToString();
                 reader.Close();
                 Response.Redirect("Inbox.aspx");
+
+                colourCookie.Values["selectedUsername"] = Session["EmailAddress"].ToString();
+                //colourCookie.Values["lastVisit"] = DateTime.Now.ToString();
+                //colourCookie.Expires = DateTime.Now.AddDays(1);
             }
             else
             {

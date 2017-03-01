@@ -9,6 +9,7 @@ namespace Ex_MailBox
 {
     public partial class Home : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,6 +23,38 @@ namespace Ex_MailBox
         protected void ButtonLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx");
+        }
+
+        protected void RadioButtonRed_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButtonBlue.Checked = false;
+            RadioButtonGreen.Checked = false;
+            RadioButtonYellow.Checked = false;
+            Session["colour"] = "red";
+        }
+
+        protected void RadioButtonBlue_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButtonRed.Checked = false;
+            RadioButtonGreen.Checked = false;
+            RadioButtonYellow.Checked = false;
+            Session["colour"] = "blue";
+        }
+
+        protected void RadioButtonGreen_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButtonBlue.Checked = false;
+            RadioButtonRed.Checked = false;
+            RadioButtonYellow.Checked = false;
+            Session["colour"] = "green";
+        }
+
+        protected void RadioButtonYellow_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButtonBlue.Checked = false;
+            RadioButtonGreen.Checked = false;
+            RadioButtonRed.Checked = false;
+            Session["colour"] = "yellow";
         }
     }
 }

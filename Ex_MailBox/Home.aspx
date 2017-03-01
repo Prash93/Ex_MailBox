@@ -18,10 +18,10 @@
         <br />
         <asp:Label ID="LabelColour" runat="server" Text="Colours"></asp:Label>
         <br />
-        <asp:RadioButton ID="RadioButtonRed" runat="server" Text="Red" />
-        <asp:RadioButton ID="RadioButtonBlue" runat="server" Text="Blue" />
-        <asp:RadioButton ID="RadioButtonGreen" runat="server" Text="Green" />
-        <asp:RadioButton ID="RadioButtonYellow" runat="server" Text="Yellow" />
+        <asp:RadioButton ID="RadioButtonRed" runat="server" Text="Red" OnCheckedChanged="RadioButtonRed_CheckedChanged" />
+        <asp:RadioButton ID="RadioButtonBlue" runat="server" Text="Blue" OnCheckedChanged="RadioButtonBlue_CheckedChanged" />
+        <asp:RadioButton ID="RadioButtonGreen" runat="server" Text="Green" OnCheckedChanged="RadioButtonGreen_CheckedChanged" />
+        <asp:RadioButton ID="RadioButtonYellow" runat="server" Text="Yellow" OnCheckedChanged="RadioButtonYellow_CheckedChanged" />
         <br />
         <br />
         <br />
