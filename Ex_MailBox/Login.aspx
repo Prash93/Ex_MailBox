@@ -28,6 +28,10 @@
         <br />
         <br />
         <asp:Button ID="ButtonLogIn" runat="server" OnClick="ButtonLogIn_Click" Text="Log In" Width="89px" />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="LabelMessage" runat="server" Text="Nothing"></asp:Label>
     </div>
     </form>
 </body>

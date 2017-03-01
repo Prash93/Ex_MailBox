@@ -14,9 +14,9 @@ namespace Ex_MailBox
         SqlCommand cmdCheckUser;
         SqlDataReader reader;
 
-        string email, password;
+        string email, password, bgColour;
 
-        HttpCookie colourCookie = new HttpCookie("userInfo");
+        //HttpCookie colourCookie = new HttpCookie("userInfo");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,21 +32,29 @@ namespace Ex_MailBox
                 Response.Write(exConnection.ToString());
             }
 
-            colourCookie.Values["selectedColour"] = Session["colour"].ToString();
+            //colourCookie.Values["selectedColour"] = Session["colour"].ToString();
 
-            try
+            //try
+            //{
+                //if (Request.Cookies["userInfo"].Values != null)
+                //{
+                    //Response.Write("Colour is: " + Session["colour"]);
+                    //Response.Write("<br/>");
+            //}
+            //}
+            //catch (Exception exCookieColour)
+            //{
+            //Response.Write(exCookieColour.ToString());
+            //}
+            if (Request.Cookies["colour"] != null)
             {
-                if (Request.Cookies["userInfo"].Values != null)
-                {
-                    Response.Write("Colour is: " + Request.Cookies["userInfo"]["selectedColour"].ToString());
-                    Response.Write("<br/>");
-                }
+                LabelMessage.Text = Request.Cookies["colour"].Value;
+                LabelMessage.BackColor = System.Drawing.Color.Aqua;
+
+                form1.Style.Add("background-color", "aqua");
             }
-            catch (Exception exCookieColour)
-            {
-                Response.Write(exCookieColour.ToString());
-            }
-            
+                
+
         }
 
         protected void ButtonLogIn_Click(object sender, EventArgs e)
@@ -69,7 +77,7 @@ namespace Ex_MailBox
                 reader.Close();
                 Response.Redirect("Inbox.aspx");
 
-                colourCookie.Values["selectedUsername"] = Session["EmailAddress"].ToString();
+                //colourCookie.Values["selectedUsername"] = Session["EmailAddress"].ToString();
                 //colourCookie.Values["lastVisit"] = DateTime.Now.ToString();
                 //colourCookie.Expires = DateTime.Now.AddDays(1);
             }

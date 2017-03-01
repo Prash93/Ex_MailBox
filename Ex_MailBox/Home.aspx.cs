@@ -9,6 +9,7 @@ namespace Ex_MailBox
 {
     public partial class Home : System.Web.UI.Page
     {
+        //HttpCookie colourCookie = new HttpCookie("colour");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -60,22 +61,28 @@ namespace Ex_MailBox
         */
         protected void ButtonRed_Click(object sender, EventArgs e)
         {
-            Session["colour"] = "red";
+            //Session["colour"] = "red";
+            //colourCookie.Value["selectedColour"]
+            Response.Cookies["colour"].Value = "red";
+
         }
 
         protected void ButtonBlue_Click(object sender, EventArgs e)
         {
-            Session["colour"] = "blue";
+            //Session["colour"] = "blue";
+            Response.Cookies["colour"].Value = "blue";
         }
 
         protected void ButtonGreen_Click(object sender, EventArgs e)
         {
-            Session["colour"] = "green";
+            //Session["colour"] = "green";
+            Response.Cookies["colour"].Value = "green";
         }
 
         protected void ButtonYellow_Click(object sender, EventArgs e)
         {
-            Session["colour"] = "yellow";
+            //Session["colour"] = "yellow";
+            Response.Cookies["colour"].Value = "yellow";
         }
     }
 }

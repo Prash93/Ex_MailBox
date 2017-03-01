@@ -5,10 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #RadioRed {
+            width: 24px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="height: 175px">
+    <div style="height: 457px">
     
         <br />
         <asp:Button ID="ButtonLogin" runat="server" Text="Login" Width="127px" OnClick="ButtonLogin_Click" />
